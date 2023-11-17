@@ -12,7 +12,7 @@ const DoctorsList = () => {
  
 
   useEffect(() => {
-    axios.get(`api/doctors/${speciality}`)
+    axios.get(`https://medicarebackend-qiax.onrender.com/api/doctors/${speciality}`)
 
       .then(response => {
         console.log(response.data)
