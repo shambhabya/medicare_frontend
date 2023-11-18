@@ -10,7 +10,7 @@ const SpecialitiesList = () => {
 
 
   useEffect(() => {
-    axios.get('https://medicarebackend-qiax.onrender.com/api/specialities')
+    axios.get("https://medicarebackend-qiax.onrender.com/api/specialities")
       .then(response => {
         setSpecialities(response.data);
       })

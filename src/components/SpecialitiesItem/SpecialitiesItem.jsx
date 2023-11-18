@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./specialitiesItem.scss"
 
 function SpecialitiesItem({speciality}) {
+  console.log(speciality);
   return (
     <div key={speciality.name} className='spec'>
             <Link to={`/${speciality.name}`}>

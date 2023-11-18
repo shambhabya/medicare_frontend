@@ -15,7 +15,6 @@ const DoctorsList = () => {
     axios.get(`https://medicarebackend-qiax.onrender.com/api/doctors/${speciality}`)
 
       .then(response => {
-        console.log(response.data)
         setDoctors(response.data);
       })
       .catch(error => {
@@ -31,7 +30,7 @@ const DoctorsList = () => {
 
           <div key={index} className='item'>
 
-          <img src={`http://localhost:3000/images/${index+1}.jpg`} alt="Doctor" />
+          <img src={`https://medicarebackend-qiax.onrender.com/images/${index+1}.jpg`} alt="Doctor" /> 
           
           
 
